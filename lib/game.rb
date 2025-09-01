@@ -17,18 +17,11 @@ class Game
     @player2 = @players.last
   end
 
-  def player1_choice
-    @player1.weapon
-  end
-
-  def player2_choice
-    @player2.weapon
-  end
 
   def result
-    if player1_choice == player2_choice
+    if player1.weapon == player2.weapon
       "It's a draw"
-    elsif @weapons[player1_choice] == player2_choice
+    elsif @weapons[player1.weapon] == player2.weapon
       "#{@player1.name} wins!"
     else
       "#{@player2.name} wins!"
