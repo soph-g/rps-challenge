@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '3.4.5'
 
 gem 'sinatra'
 gem 'rake'
@@ -15,3 +15,6 @@ group :test do
   gem 'byebug'
   gem 'selenium-webdriver'
 end
+
+gem "rackup", "~> 2.2"
+gem "puma", "~> 6.6"
